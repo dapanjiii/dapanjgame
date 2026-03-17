@@ -179,3 +179,24 @@
 //	return 0;
 //}
 
+//首尾字母大写
+//char uf(char* s) {
+//	int len = strlen(s);
+//	if (s[0] >= 'a' && s[0] <= 'z')
+//	s[0] = s[0] - 'a' + 'A';
+//	if (s[len - 1] >= 'a' && s[len - 1] <= 'z')
+//		s[len - 1] = s[len - 1] - 'a' + 'A';
+//	return s;
+//}
+//int main() {
+//	char s[100];
+//	printf("请输入一个字符串：");
+//	scanf("%s", s);
+//
+//	uf(s);
+//	printf("修改后的字符串为：%s", s);
+//	return 0;
+//}
+
+
+
