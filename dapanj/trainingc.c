@@ -209,6 +209,33 @@
 //	return 0;
 //}
 
+//求1！+2！...+n！，用递归和非递归两种方法
+//递归方法
+//int fun(n) {
+//	if (n == 1)
+//		return 1;
+//	else
+//		return n*fun(n - 1);
+//}
+
+//非递归方法
+//int main() {
+//	int n;
+//	printf("请输入一个数：");
+//	scanf("%d", &n);
+//	int sum = 1, j = 1;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		j *= i;
+//		sum += j;
+//	}
+//	printf("结果为：%d", sum);
+//	return 0;
+//}
+
+//杨辉三角前十行
+
+
 
 
 
