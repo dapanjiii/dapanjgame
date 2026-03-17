@@ -167,9 +167,15 @@
 //}
 
 //三个整数最大值
-int main()
-{
-
-	return 0;
-}
+//int maxnum(int a, int b, int c) {
+//	return (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+//}
+//int main()
+//{
+//	int a, b, c;
+//	printf("输入三个数：");
+//	scanf("%d,%d,%d", &a, &b, &c);
+//	printf("最大值为：%d", maxnum(a, b, c));
+//	return 0;
+//}
 
