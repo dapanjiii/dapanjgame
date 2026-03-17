@@ -198,5 +198,17 @@
 //	return 0;
 //}
 
+//三个双精度数平均值，保留后一位，小数点第二位四舍五入
+//int main() {
+//	double a, b, c;
+//	printf("请输入三个数：");
+//	scanf("%lf,%lf,%lf", &a, &b, &c);
+//	double avg = (a + b + c) / 3;
+//	avg = (int)(avg * 10 + 0.5) / 10.0; // 保留一位小数，四舍五入
+//	printf("平均值为：%.1lf", avg);
+//	return 0;
+//}
+
+
 
 
