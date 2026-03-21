@@ -256,7 +256,237 @@
 //	return 0;
 //}
 
+//选择排序函数
+//void select_sort(int arr[], int n) {
+//	for (int i = 0; i < n - 1; i++)
+//		{
+//		int min_index = i;
+//		for (int j = i + 1; j < n; j++)
+//		{
+//			if (arr[j] < arr[min_index])
+//				min_index = j;
+//		}
+//		if (min_index != i)
+//		{
+//			int temp = arr[i];
+//			arr[i] = arr[min_index];
+//			arr[min_index] = temp;
+//		}
+//	}
+//}
+//int main() {
+//	return 0;
+//}
 
 
+//能否被7和11同时整除
+//int main() {
+//	int a;
+//	printf("请输入一个数：");
+//	scanf("%d", &a);
+//
+//	if(a%7==0&&a%11==0)
+//		printf("能被7和11同时整除");
+//	if(a%7!=0&&a%11!=0)
+//		printf("不能被7和11同时整除");
+//	if(a%7==0&&a%11!=0)
+//		printf("能被7整除，不能被11整除");
+//	if(a%7!=0&&a%11==0)
+//		printf("不能被7整除，能被11整除");
+//	return 0;
+//}
 
 
+//8位2进制数转10进制
+//int main() {
+//	int bin[8];
+//		printf("请输入一个8位二进制数：");
+//		for (int i = 0; i < 8; i++)
+//			scanf("%d", &bin[i]);
+//		int dec = 0;
+//		for(int j=7;j>=0;j--)
+//			dec += bin[j] * (1 << (7 - j));
+//		printf("转换后的十进制数为：%d", dec);
+//}
+
+//数组中比相邻元素大的数
+
+//int Statistics(int a[], int n) {
+//	int count = 0;
+//	for (int i = 0; i < n; i++)
+//	{
+//
+//		if (a[i] > a[i - 1] && a[i] > a[i + 1])
+//			count++;
+//	}
+//	return count;
+//
+//}
+//
+//void  main() {
+//	int a[10];
+//	printf("请输入10个数：");
+//	for(int i = 0; i < 10; i++)
+//		scanf("%d", &a[i]);
+//
+//	printf("数组中比相邻元素大的数的个数为：%d", Statistics(a, 10));
+//}
+
+
+//10个数中最大最小值
+//int main() {
+//	int a[10];
+//	printf("请输入10个数：");
+//	for (int i = 0; i < 10; i++)
+//		scanf("%d", &a[i]);
+//
+//	int max = a[0], min = a[0];
+//	for (int j = 1; j < 10; j++)
+//	{
+//		if(a[j]>max)
+//			max = a[j];
+//		else if(a[j]<min)
+//			min = a[j];
+//	}
+//
+//	printf("最大值为：%d，最小值为：%d", max, min);
+//}
+
+//输出图形
+//int main() {
+//	int i, j, k = 1;
+//	for (int i = 0; i <= 9; i++) {
+//		if (i <= 5) {
+//			for(j=1;j<=i;j++)
+//				printf("* ");
+//			printf("\n");
+//		}
+//		else {
+//			for(j=1; j <= i-2*k; j++)
+//				printf("* ");
+//			printf("\n");
+//			k++;
+//		}
+//	}
+//}
+
+//fact(n)计算1！+2！+。。。+n！的阶乘
+
+//float fact(int n) {
+//	float sum = 0, j = 1;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		j *= i;
+//		sum += j;
+//	}
+//
+//	return sum;
+//}
+//
+//int main() {
+//	int n;
+//	printf("请输入一个数：");
+//	scanf("%d", &n);
+//
+//	printf("结果为：%f", fact(n));
+//}
+
+
+//1000-2000内能被5，11同时整除的数，但不能被9整除，以16进制输出
+//int main() {
+//	for (int i = 1000; i <= 2000; i++) {
+//		if(i%5==0&&i%11==0&&i%9!=0)
+//			printf("%x ", i);
+//	}
+//}
+
+
+//输出一个整数的每一位，空格分开
+//int main() {
+//	int N;
+//	printf("请输入一个整数：");
+//	scanf("%d", &N);
+//	for (int i = 0; i < 10; i++)
+//	{
+//		int digit = N % 10;
+//		printf("%d ", digit);
+//		N /= 10;
+//	}
+//	return 0;
+//}
+
+//求一个正整数的二进制数
+//int main() {
+//	int n;
+//	printf("请输入一个正整数：");
+//	scanf("%d", &n);
+//	while (n != 1 && n != 0) {
+//		n%2 == 0 ? printf("0") : printf("1");
+//		n /= 2;
+//	}
+//
+//}
+
+//统计数组奇偶数并求和
+//int main() {
+//	int a[20];
+//	
+//	printf("请输入20个数：");
+//		for (int i = 0; i < 20; i++)
+//			scanf("%d", &a[i]);
+//	
+//		int sum_j = 0, sum_o = 0;
+//			for(int i =0;i<20;i++)
+//			{
+//				if(a[i]%2==0)
+//					sum_o+=a[i];
+//				else
+//					sum_j+=a[i];
+//			}
+//		printf("奇数和为：%d，偶数和为：%d", sum_j, sum_o);
+//}
+
+//杨辉三角前十行
+//int main() {
+//	int a[10][10] = { 0 };
+//
+//	for(int i=0;i<10;i++)
+//	{
+//		a[i][0] = 1;
+//		a[i][i] = 1;
+//	}
+//	for(int i=2;i<10;i++)
+//		for(int j=0;j<=i;j++)
+//			a[i][j] = a[i-1][j-1]+a[i-1][j];
+//	for(int i=0;i<10;i++)
+//	{
+//		for(int j=0;j<=i;j++)
+//			printf("%d ", a[i][j]);
+//		printf("\n");
+//	}
+//}
+
+
+//1900-2000闰年
+//int main() {
+//	int j = 0;
+//	for (int i = 1900; i <= 2000; i++)
+//	{
+//		
+//		if (i % 4 == 0 && i % 100 != 0 || i % 400 == 0)
+//		{
+//			printf("%d ", i);
+//			j++;
+//			if (j == 3)
+//			{
+//				printf("\n");
+//				j = 0;
+//			}
+//		}
+//		
+//	}
+//
+//}
+
+
+//定义一个宏，两参数互换
