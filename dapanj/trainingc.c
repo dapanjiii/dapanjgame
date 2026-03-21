@@ -490,3 +490,109 @@
 
 
 //定义一个宏，两参数互换
+#define SWAP(a,b)  temp = a; a = b; b = temp;
+//int main() {
+//	int a, b, temp;
+//	printf("请输入两个数：");
+//	scanf("%d,%d", &a, &b);
+//	SWAP(a, b);
+//	printf("交换后的结果为：%d,%d", a, b);
+//}
+
+//使字符串按反序存放
+//void inver(char* s) {
+//	int len = strlen(s);
+//	int j, k;
+//	for (j = 0, k = len - 1; j < k; j++, k--)
+//	{
+//		char temp = s[j];
+//		s[j] = s[k];
+//		s[k] = temp;
+//	}
+//}
+//
+//
+//int main() {
+//	char s[100];
+//	printf("请输入一个字符串：");
+//	scanf("%s", s);
+//	inver(s);
+//	printf("反序后的字符串为：%s", s);
+//}
+
+//取无符号整数右边的4-7位
+//int main() {
+//		unsigned int n;
+//	printf("请输入一个无符号整数：");
+//	scanf("%u", &n);
+//	unsigned int result = (n >> 4) & 0x0F; // 右移4位后取低4位
+//	printf("右边的4-7位为：%u", result);
+//	return 0;
+//}
+
+//20个数的和及平均值，分别统计大于，小于，等于平均值的个数
+//int main() {
+//	int a[20],sum=0;
+//	printf("请输入20个数：");
+//	for (int i = 0; i < 20; i++) {
+//		printf("请输入第%d个数：", i+1);
+//
+//		scanf("%d", &a[i]);
+//		sum += a[i];
+//	}
+//	int avg = sum / 20;
+//	int count_big=0, count_small=0, count_equal=0;
+//	for(int i=0;i<20;i++)
+//	{
+//		if(a[i]>avg)
+//			count_big++;
+//		else if(a[i]<avg)
+//			count_small++;
+//		else
+//			count_equal++;
+//	}
+//	printf("20个数的和为：%d，平均值为：%d\n", sum, avg);
+//	printf("大于平均值的个数为：%d，小于平均值的个数为：%d，等于平均值的个数为：%d", count_big, count_small, count_equal);
+//	return 0;
+//	
+//}
+
+//if-else实现比大小
+//int main() {
+//	int a=0, b=10, c=-9;
+//	if (a > b)
+//	{
+//		if (a > c)
+//			printf("a最大");
+//		else
+//			printf("c最大");
+//	}
+//	else if (a < b)
+//	{
+//		if (b > c)
+//			printf("b最大");
+//		else
+//			printf("c最大");
+//	}
+//	return 0;
+//}
+
+//编写函数使数组逆序存放
+//void inv(int a[], int n) {
+//	int j, k;
+//	for(j=0, k = n - 1; j < k; j++, k--)
+//	{
+//		int temp = a[j];
+//		a[j] = a[k];
+//		a[k] = temp;
+//	}
+//}
+//
+//void main() {
+//	int a[10]={ 1,2,3,4,5,6,7,8,9,10 };
+//	inv(a, 10);
+//	printf("逆序后的数组为：");
+//	for(int i=0;i<10;i++)
+//		printf("%d ", a[i]);
+//
+//}
